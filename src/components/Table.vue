@@ -1223,7 +1223,7 @@ export default {
       // if user has supplied custom formatter,
       // use that here
       if (column.formatFn && typeof column.formatFn === 'function') {
-        return column.formatFn(value, obj);
+        return column.formatFn(value, obj, column);
       }
 
       // lets format the resultant data
